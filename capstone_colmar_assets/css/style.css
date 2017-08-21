@@ -1,0 +1,469 @@
+@charset "utf-8";
+/*Universal Settings*/
+
+body{
+	margin: 0 auto;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+	font-size: 38px;
+	font-weight: 800;	
+}
+
+h3{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content-hover:hover{
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.mobile{
+	display: none;
+}
+
+div.cf{
+	clear: both;
+}
+
+.overflow{
+	overflow: hidden;
+}
+
+/* header */
+
+header{
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	font-size: 32px;
+}
+
+header ul{
+	margin: 0 24px;
+}
+
+header ul li.logo{
+	float: left;
+	font-weight: bold;
+	background: url("../images/ic-logo.svg") left center no-repeat;
+	padding-left: 32px;
+}
+
+header ul li.logo span{
+	color: #ccc;
+	font-weight: normal;
+}
+
+header ul div#desktop-lists{
+	float: right;
+}
+
+header ul div#desktop-lists li{
+	display: inline-block;
+	padding-right: 16px;
+}
+
+header ul div#desktop-lists li a{
+	font-size: 1.4rem;
+	color: #333;
+}
+
+/* Top-banner */
+#top-banner{
+	width: 100%;
+	height: auto;
+	color: #333;
+	background-color: #ddd;
+	display: flex;
+}
+
+#top-banner img{
+	padding: 32px 24px;
+	width: 60%;
+	height: 60%;
+}
+
+#top-banner div.right-banner{
+	margin: auto 0;
+}
+
+#top-banner div.right-banner h1{
+	font-size: 45px;
+	font-weight: 900;
+	line-height: 60px;
+}
+
+#top-banner div.right-banner p{
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+#top-banner div.right-banner button{
+	color: #fff;
+	background-color: #333;
+	padding: 8px 0;
+	width: 100%;
+	margin-top: 20px;
+	font-size: 21px;
+	cursor: pointer;
+}
+
+#top-banner div.right-banner button:hover{
+	opacity: 0.7;
+}
+
+/* Main-info */
+
+#main-info{
+	width: 100%;
+	height: auto;
+}
+
+#main-info #left-content,
+#thesis #main-video{
+	width: 60%;
+	float: left;
+}
+
+#left-content img,
+#thesis #main-video video{
+	width: 100%;
+	height: auto;
+}
+
+#main-info h2,
+#main-info #left-content p{
+	padding-left: 24px;
+	margin-bottom:24px;
+}
+
+#left-content img{
+	padding: 32px 24px;
+}
+
+#main-info p{
+	line-height: 1.5rem;
+}
+
+#main-info p.subtext{
+	font-size: 15px;
+	padding-bottom: 32px;
+}
+
+#main-info #right-lists,
+#thesis #right-exhibits{
+	width: 40%;
+	float: right;
+}
+
+#main-info #right-lists ul{
+	margin-top: 32px;
+	padding-left: 48px;
+}
+
+#main-info #right-lists ul li{
+	border: 1px solid #ddd;
+	display: flex; 
+}
+
+#main-info #right-lists img,
+#thesis #right-exhibits img{
+	width: 35%;
+	height: auto;
+	align-self: center;
+	padding: 16px 0 16px 16px;
+}
+
+#main-info #right-lists .right-text,
+#thesis #right-exhibits .right-text{
+	width: 65%;
+	align-self: center;
+	justify-content: center;
+	padding: 0 16px;
+}
+
+#main-info #right-lists p,
+#learning .learn-contents .learn-text p.subtitle,
+#thesis #right-exhibits p{
+	margin: 8px 0;
+}
+
+#main-info #right-lists p a{
+	color: #0099FF;
+}
+
+/* Learning*/
+
+#learning{
+	width: 100%;
+	height: auto;
+	background-color: #ddd;
+}
+
+
+#learning h2, #thesis h2{
+	padding: 32px 0;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#learning .learn-contents{
+	display: flex;
+	flex-wrap: wrap;
+	margin:0 40px 0 72px;
+}
+
+#learning .learn-contents div{
+	background-color: #fff;
+	width: 30%;
+	margin:0 32px 32px 0;
+}
+
+
+#learning .learn-contents img{
+	width: 100%;
+	height: auto;
+}
+
+#learning .learn-contents .learn-text{
+	width: 90%;
+	padding: 16px 0 24px 16px;
+	margin-bottom: 0;
+}
+
+#learning h3{
+	padding-bottom: 10px;
+}
+
+#learning p{
+	color: #555;
+}
+
+/* Thesis*/
+
+#thesis{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 32px;
+}
+
+
+#thesis #main-video video,
+#thesis #main-video p{
+	padding-left: 24px;
+}
+
+#thesis #main-video video{
+	cursor: pointer;
+}
+
+#thesis #main-video h3{
+	padding: 24px 0 8px 24px;
+}
+
+#thesis #right-exhibits ul{
+	padding-left: 24px;
+}
+
+#thesis #right-exhibits ul li{
+	display: flex;
+}
+
+/* Footer*/
+footer{
+	width: 100%;
+	height: 64px;
+	margin: 0 auto;
+	border-top: 1px solid #ddd;
+	font-size: 15px;
+}
+
+footer ul{
+	padding: 16px 24px;
+}
+
+footer ul li.copy-right{
+	float: left;
+}
+
+footer ul div#footer-lists{
+	float: right;
+}
+
+footer ul li{
+	display: inline-block;
+}
+
+footer ul div#footer-lists li{
+	padding-left: 16px;
+}
+
+footer ul div#footer-lists li a{
+	color: #333;
+}
+
+/* For Easire to read learning lists*/
+@media screen and (max-width: 1090px){
+	#learning .learn-contents div{
+		width: 46%;
+	}
+}
+
+/*laptop PC*/
+
+@media screen and (max-width: 933px){
+	header ul div#desktop-lists li{
+		padding-right: 10px;
+	}
+	header ul div#desktop-lists li a{
+		font-size: 1rem;
+	}
+
+	#learning .learn-contents div{
+		width: 44%;
+	}
+}
+
+/* Mobile(iPhone, Android) */
+
+@media screen and (max-width: 750px){
+	.desktop{
+		display: none;
+	}
+
+	header ul{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header ul li.mobile{
+		display: flex;
+
+	}
+
+	#top-banner{
+		display: block;
+		width: 100%;
+	}
+
+	#top-banner img{
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#top-banner .right-banner{
+		padding:0 16px;
+	}
+
+	#top-banner h1{
+		padding: 32px 0;
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	#top-banner p{
+		padding-bottom: 24px;
+	}
+
+	#top-banner button{
+		margin: 0 auto 32px auto;
+	}
+
+	#main-info, #learning{
+		border-bottom: 1px solid #ddd;
+	}
+
+	#main-info #right-lists{
+		width: 100%;
+		float: none;
+	}
+
+	#main-info #right-lists ul{
+		margin: 16px;
+		padding-left: 0;
+	}
+
+	#main-info #right-lists ul li{
+		border: none;
+		display: block;
+		padding-bottom: 64px;
+	}
+
+	#main-info #right-lists ul li:last-of-type{
+		padding-bottom: 16px;
+	}
+
+	#main-info #right-lists img.mobile{
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	#main-info #right-lists div.right-text{
+		padding-top: 32px;
+	}
+
+	#learning{
+		background-color: #fff;
+	}
+
+	#learning .learn-contents{
+		display: none;
+	}
+
+	#learning .mobile-learn{
+		display: block;
+		margin-bottom: 32px;
+	}
+
+	#learning ul li{
+		padding: 16px 0 24px 16px;
+		margin:0 12px 8px 12px;
+		background-color: #ddd;
+	}
+
+	#learning ul li:hover{
+		background-color: #cff;
+		cursor: pointer;
+	}
+
+	#learning ul li a{
+		font-size: 22px;
+		color: #333;
+		font-weight: 600;
+	}
+
+	#thesis #main-video{
+		width: 100%;
+	}
+
+	#thesis #main-video video{
+		padding: 0;
+	}
+
+	#thesis h2{
+		padding-bottom: 16px;
+	}
+
+	footer ul{
+		padding: 16px 0;
+	}
+
+	footer ul li{
+		display: block;
+		text-align: center;
+	}
+}
